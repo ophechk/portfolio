@@ -1,0 +1,46 @@
+body {
+    font-family: "Gill Sans", sans-serif;;
+}
+
+/*navbar*/
+.navbar {
+    background-color: black; /* Couleur de fond */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white; /* Couleur du texte */
+    text-align: center;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background-color: #00838f; /* Couleur au survol */
+}
+
+.navbar a.active {
+    background-color: #00838f; /* Couleur du lien actif */
+}
+
+h2 {
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    background-color: black; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style de copyright */
+footer .copyright {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #ccc;
+}
