@@ -19,11 +19,11 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #00838f; /* Couleur au survol */
+    background-color: #1a237e; /* Couleur au survol */
 }
 
 .navbar a.active {
-    background-color: #00838f; /* Couleur du lien actif */
+    background-color: #1a237e; /* Couleur du lien actif */
 }
 
 h2 {
@@ -43,4 +43,49 @@ footer .copyright {
     margin-top: 15px;
     font-size: 0.9em;
     color: #ccc;
+}
+
+/*box image*/
+.image-box {
+    position: relative;
+    width: 1240px;
+    height: 300px;
+    background-image: url('arcane.jpg'); /* URL de l'image de fond */
+    background-size: cover; /* L'image couvre toute la box */
+    background-position: center;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Superposition pour rendre le texte plus lisible */
+.image-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couche sombre transparente */
+}
+
+/* Contenu à l'intérieur de la box */
+.image-box .content {
+    position: relative; /* Pour être au-dessus de la superposition */
+    padding: 20px;
+    z-index: 1;
+}
+
+.image-box h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.image-box p {
+    font-size: 1em;
+    margin-top: 8px;
 }
