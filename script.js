@@ -10,3 +10,4 @@ function togglePDFLinks() {
         button.textContent = "Afficher";
     }
 }
+
