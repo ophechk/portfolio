@@ -1,37 +1,79 @@
+/*police d'écriture*/
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: "Gill Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #c5cae9;
     color: black;
 }
 
-/*navbar*/
-.navbar {
-    background-color: black; /* Couleur de fond */
-    overflow: hidden;
-    border-radius: 12px;
+/*header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: white; /* Couleur du texte */
-    text-align: center;
-    padding: 13px 25px;
+
+.header-left { /* Conteneur pour le titre et le logo */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre le titre et le logo */
+}
+
+
+header h4 { /* Style du titre */
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+}
+
+
+.navbar { /* Style de la barre de navigation */
+    display: flex;
+    gap: 15px;
+}
+
+
+.navbar a { /* Style des liens de navigation */
+    color: #fff;
     text-decoration: none;
-    font-size: 14px;
-    
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.navbar a:hover {
-    background-color: #1a237e; /* Couleur au survol */
+
+.navbar a:hover { /* Effet sur les liens au survol */
+    background-color: #303f9f;
 }
 
-.navbar a.active {
-    background-color: #1a237e; /* Couleur du lien actif */
+
+.navbar .active { /* Style du lien actif */
+    background-color: #303f9f;
 }
 
+/*titre*/
 h2 {
     text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*accueil*/
+.conteneur {
+    background-color: #e3f2fd;
+    border: 1px solid #e3f2fd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /*footer*/
@@ -42,8 +84,8 @@ footer {
     text-align: center;
 }
 
-/* Style de copyright */
-footer .copyright {
+
+footer .copyright { /* Style de copyright */
     margin-top: 15px;
     font-size: 0.9em;
     color: #ccc;
@@ -53,7 +95,7 @@ footer .copyright {
 .image-box {
     position: relative;
     width: 1240px;
-    height: 300px;
+    height: 500px;
     background-image: url('/images/arcane.jpg'); /* URL de l'image de fond */
     background-size: cover; /* L'image couvre toute la box */
     background-position: center;
@@ -66,8 +108,8 @@ footer .copyright {
     text-align: center;
 }
 
-/* Superposition pour rendre le texte plus lisible */
-.image-box::before {
+
+.image-box::before { /* Superposition pour rendre le texte plus lisible */
     content: "";
     position: absolute;
     top: 0;
@@ -77,8 +119,8 @@ footer .copyright {
     background-color: rgba(0, 0, 0, 0.5); /* Couche sombre transparente */
 }
 
-/* Contenu à l'intérieur de la box */
-.image-box .content {
+
+.image-box .content { /* Contenu à l'intérieur de la box */
     position: relative; /* Pour être au-dessus de la superposition */
     padding: 20px;
     z-index: 1;
@@ -95,8 +137,8 @@ footer .copyright {
 }
 
 /*liens pdf*/
-/* Style pour la section des liens PDF */
-.pdf-links {
+
+.pdf-links { /* Style pour la section des liens PDF */
     display: none; /* Masquer par défaut */
     margin: 20px auto;
     padding: 10px 20px;
@@ -125,8 +167,8 @@ footer .copyright {
     background-color: #ddd;
 }
 
-/* Style pour le bouton */
-.toggle-btn {
+
+.toggle-btn { /* Style pour le bouton */
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -145,4 +187,102 @@ footer .copyright {
 
 div.pdf {
     text-align: center;
+}
+
+/*page d'accueil*/
+.box-container {
+    display: flex;
+    gap: 180px; /* Espace entre les boîtes */
+    padding: 20px;
+}
+
+
+.box1 { /* Style des boîtes carrées */
+    background-image: url();
+    color: white;
+    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.box2 { /* Style des boîtes carrées */
+    background-image: url();
+    color: white;
+    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.box3 { /* Style des boîtes carrées */
+    background-image: url();
+    color: white;
+    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.box4 { /* Style des boîtes carrées */
+    background-image: url();
+    color: white;
+    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.box5 { /* Style des boîtes carrées */
+    background-image: url();
+    color: white;
+    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.box1:hover { /* Effet au survol */
+    transform: scale(1.05);
+}
+
+.box2:hover { /* Effet au survol */
+    transform: scale(1.05);
+}
+
+.box3:hover { /* Effet au survol */
+    transform: scale(1.05);
+}
+
+.box4:hover { /* Effet au survol */
+    transform: scale(1.05);
+}
+
+.box5:hover { /* Effet au survol */
+    transform: scale(1.05);
 }

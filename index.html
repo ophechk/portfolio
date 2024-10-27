@@ -11,7 +11,15 @@
     <body>
 
         <header>
-            <h4>Portfolio CHHEAK Ophélia</h4>
+
+            <div class="header-left">
+                <h4>Portfolio CHHEAK Ophélia</h4>
+                <div class="logo">
+                    <img src="images/arriere_plan.gif" height="40px"
+                        width="40px" alt="Logo">
+                </div>
+            </div>
+
             <div class="navbar">
                 <a href="index.html" class="active">Accueil</a>
                 <a href="apropos.html">À propos</a>
@@ -27,29 +35,56 @@
             <div class="content"></div>
         </div>
 
+        <br>
+
         <main>
-            <h2>Accueil</h2>
 
             <section id="accueil">
-                <h4>Présentation</h4>
-                <p>Bienvenue sur mon portfolio.</p>
-                <p>Je m'appelle Ophélia CHHEAK et je suis actuellement étudiante
-                    en deuxième année de BTS SIO option SLAM.</p>
-            </section>
+                <h4>Bienvenue sur mon portfolio !</h4>
 
-            <br>
-
-            <div class="pdf">
-                <p class="pdf">Pour voir les documents en PDF :</p>
-                <button class="toggle-btn" onclick="togglePDFLinks()">Afficher</button>
-
-                <div class="pdf-links" id="pdfLinks">
-                    <ul>
-                        <li><a href="fichiers/tableau_synthese_E4.xlsx" target="_blank">Tableau de synthèse E4</a></li>
-                        <li><a href="fichiers/CV_Ophélia_CHHEAK.pdf" target="_blank">CV stage de deuxième année</a></li>
-                    </ul>
+                <div class="conteneur">
+                    <p>Je suis Ophélia CHHEAK et je suis actuellement étudiante
+                        en BTS SIO au lycée Turgot (Paris) et j'ai choisi
+                        l'option SLAM au cours de l'année.
+                        Découvrez mon parcours, mes projets et ma passion pour
+                        le
+                        développement web. Bonne visite !</p>
+                    <p>Commençons par voir les compétences que j'ai pu acquérir
+                        lors de ces
+                        deux années en BTS SIO :</p>
                 </div>
-            </div>
+
+                <br>
+
+                <div class="accueil">
+                    <div class="box-container">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                        <div class="box3"></div>
+                        <div class="box4"></div>
+                        <div class="box5"></div>
+                    </div>
+                </div>
+
+                <div class="pdf">
+                    <p>Ici, vous pouvez retrouver les différents documents pour
+                        l'examen du BTS.</p>
+                    <p class="pdf">Pour voir les documents en PDF :</p>
+                    <button class="toggle-btn"
+                        onclick="togglePDFLinks()">Afficher</button>
+
+                    <div class="pdf-links" id="pdfLinks">
+                        <ul>
+                            <li><a href="fichiers/tableau_synthese_E4.xlsx"
+                                    target="_blank">Tableau de synthèse
+                                    E4</a></li>
+                            <li><a href="fichiers/CV_Ophélia_CHHEAK.pdf"
+                                    target="_blank">CV stage de deuxième
+                                    année</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
             <script src="script.js"></script>
 
