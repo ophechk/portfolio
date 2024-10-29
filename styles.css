@@ -108,6 +108,21 @@ footer .copyright { /* Style de copyright */
     text-align: center;
 }
 
+.image-box2 {
+    position: relative;
+    width: 1240px;
+    height: 500px;
+    background-image: url('/images/arcane2.png'); /* URL de l'image de fond */
+    background-size: cover; /* L'image couvre toute la box */
+    background-position: center;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 .image-box::before { /* Superposition pour rendre le texte plus lisible */
     content: "";
