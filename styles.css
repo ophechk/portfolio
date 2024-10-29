@@ -144,7 +144,7 @@ footer .copyright { /* Style de copyright */
     padding: 10px 20px;
     width: 60%;
     border-radius: 15px;
-    background-color: #f3f3f3;
+    background-color: #c5cae9;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
@@ -164,7 +164,7 @@ footer .copyright { /* Style de copyright */
 }
 
 .pdf-links li a:hover {
-    background-color: #ddd;
+    background-color: #e3f2fd;
 }
 
 
@@ -198,7 +198,8 @@ div.pdf {
 
 
 .box1 { /* Style des boîtes carrées */
-    background-image: url();
+    background-image: url(images/html.png);
+    background-color: #e3f2fd;
     color: white;
     width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
     height: 100px; /* Hauteur identique à la largeur pour un carré */
@@ -212,7 +213,8 @@ div.pdf {
 }
 
 .box2 { /* Style des boîtes carrées */
-    background-image: url();
+    background-image: url(images/css.png);
+    background-color: #e3f2fd;
     color: white;
     width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
     height: 100px; /* Hauteur identique à la largeur pour un carré */
@@ -226,7 +228,8 @@ div.pdf {
 }
 
 .box3 { /* Style des boîtes carrées */
-    background-image: url();
+    background-image: url(images/js.png);
+    background-color: #e3f2fd;
     color: white;
     width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
     height: 100px; /* Hauteur identique à la largeur pour un carré */
@@ -240,7 +243,8 @@ div.pdf {
 }
 
 .box4 { /* Style des boîtes carrées */
-    background-image: url();
+    background-image: url(images/python.png);
+    background-color: #e3f2fd;
     color: white;
     width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
     height: 100px; /* Hauteur identique à la largeur pour un carré */
@@ -254,7 +258,8 @@ div.pdf {
 }
 
 .box5 { /* Style des boîtes carrées */
-    background-image: url();
+    background-image: url(images/php.png);
+    background-color: #e3f2fd;
     color: white;
     width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
     height: 100px; /* Hauteur identique à la largeur pour un carré */
@@ -285,4 +290,56 @@ div.pdf {
 
 .box5:hover { /* Effet au survol */
     transform: scale(1.05);
+}
+
+.box-container2 {
+    display: flex;
+    gap: 120px; /* Espace entre les boîtes */
+    padding: 20px;
+    margin-left: 330px;
+}
+
+.box6 { /* Style des boîtes carrées */
+    background-image: url(images/angular.png);
+    background-color: #e3f2fd;
+    color: white;
+    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.box7 { /* Style des boîtes carrées */
+    background-image: url(images/typescript.png);
+    background-color: #e3f2fd;
+    color: white;
+    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.box8 { /* Style des boîtes carrées */
+    background-image: url(images/mysql.png);
+    background-color: #e3f2fd;
+    color: white;
+    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
