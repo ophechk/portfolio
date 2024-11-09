@@ -112,7 +112,55 @@ footer .copyright { /* Style de copyright */
     position: relative;
     width: 1240px;
     height: 500px;
-    background-image: url('/images/arcane2.png'); /* URL de l'image de fond */
+    background-image: url('/images/bilgewater.jpg'); /* URL de l'image de fond */
+    background-size: cover; /* L'image couvre toute la box */
+    background-position: center;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-box3 {
+    position: relative;
+    width: 1240px;
+    height: 500px;
+    background-image: url('/images/ionia3.jpg'); /* URL de l'image de fond */
+    background-size: cover; /* L'image couvre toute la box */
+    background-position: center;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-box4 {
+    position: relative;
+    width: 1240px;
+    height: 500px;
+    background-image: url('/images/shurima2.jpg'); /* URL de l'image de fond */
+    background-size: cover; /* L'image couvre toute la box */
+    background-position: center;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-box5 {
+    position: relative;
+    width: 1240px;
+    height: 500px;
+    background-image: url('/images/targon2.jpg'); /* URL de l'image de fond */
     background-size: cover; /* L'image couvre toute la box */
     background-position: center;
     color: #fff;
