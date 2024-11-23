@@ -420,5 +420,19 @@ h6{
     text-align: center;
 }
 
+p.center{
+    text-align: center;
+}
+
 /*animations*/
 
+/*images*/
+
+.elisaLemonnier {
+    text-align: center; /* Centre l'image horizontalement */
+  }
+  
+  img {
+    max-width: 100%; 
+    height: auto;
+  }
