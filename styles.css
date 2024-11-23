@@ -424,6 +424,10 @@ p.center{
     text-align: center;
 }
 
+p{
+    text-align: justify;
+}
+
 /*animations*/
 
 /*images*/
