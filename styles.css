@@ -432,7 +432,7 @@ p{
 
 /*images*/
 
-.elisaLemonnier {
+.stage {
     text-align: center; /* Centre l'image horizontalement */
   }
   
@@ -440,3 +440,4 @@ p{
     max-width: 100%; 
     height: auto;
   }
+
