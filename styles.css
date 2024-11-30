@@ -92,6 +92,10 @@ footer .copyright { /* Style de copyright */
     color: #ccc;
 }
 
+a.link{
+    display: flex;
+}
+
 /*box image*/
 .image-box {
     position: relative;
@@ -422,6 +426,7 @@ h6{
 
 p.center{
     text-align: center;
+    text-decoration: underline;
 }
 
 p{
