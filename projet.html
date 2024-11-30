@@ -6,6 +6,61 @@
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
+
+        <style>
+    
+            .container2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                padding: 20px;
+                max-width: 1200px;
+            }
+    
+            .project-box {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                width: 300px;
+                padding: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                transition: transform 0.2s;
+            }
+    
+            .project-box:hover {
+                transform: translateY(-5px);
+            }
+    
+            .project-title {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+                color: #486079;
+            }
+    
+            .project-description {
+                font-size: 1em;
+                margin-bottom: 15px;
+                color: #555;
+            }
+    
+            .project-button {
+                background-color: #244364;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 1em;
+                cursor: pointer;
+            }
+    
+            .project-button:hover {
+                background-color: #7ea4cd;
+            }
+        </style>
+
     </head>
 
     <body>
@@ -39,17 +94,36 @@
 
         <main>
 
-            <section>
-                <h4>Projets</h4>
+            <h4>Mes Projets</h4>
 
-                <div class="conteneur">
-                    <p>Voici les projets principaux des deux années de BTS SIO :</p>
-
-                    
+            <div class="container2">
+                <!-- Exemple de projet -->
+                <div class="project-box">
+                    <div class="project-title">Projet 1</div>
+                    <div class="project-description">Une brève description du
+                        projet 1.</div>
+                    <a href="projet1.html" class="project-button">Voir le
+                        projet</a>
                 </div>
 
+                <div class="project-box">
+                    <div class="project-title">Projet 2</div>
+                    <div class="project-description">Une brève description du
+                        projet 2.</div>
+                    <a href="projet2.html" class="project-button">Voir le
+                        projet</a>
+                </div>
 
-            </section>
+                <div class="project-box">
+                    <div class="project-title">Projet 3</div>
+                    <div class="project-description">Une brève description du
+                        projet 3.</div>
+                    <a href="projet3.html" class="project-button">Voir le
+                        projet</a>
+                </div>
+
+                <!-- Ajoutez d'autres projets ici -->
+            </div>
 
             <br>
             <br>
@@ -61,7 +135,7 @@
         <footer>
             <div class="footer-content">
                 <div class="copyright">
-                    <p calss="center">Contact : chk.ophe@gmail.com</p>
+                    <p class="center">Contact : chk.ophe@gmail.com</p>
                     &copy; 2024 - Mon Portfolio. Tous droits réservés.
                 </div>
             </div>
