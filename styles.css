@@ -95,7 +95,7 @@ footer .copyright { /* Style de copyright */
 /*box image*/
 .image-box {
     position: relative;
-    width: 1240px;
+    width: 1260px;
     height: 500px;
     background-image: url('/images/arcane.jpg'); /* URL de l'image de fond */
     background-size: cover; /* L'image couvre toute la box */
@@ -111,7 +111,7 @@ footer .copyright { /* Style de copyright */
 
 .image-box2 {
     position: relative;
-    width: 1240px;
+    width: 1260px;
     height: 500px;
     background-image: url('/images/bilgewater.jpg'); /* URL de l'image de fond */
     background-size: cover; /* L'image couvre toute la box */
@@ -127,7 +127,7 @@ footer .copyright { /* Style de copyright */
 
 .image-box3 {
     position: relative;
-    width: 1240px;
+    width: 1260px;
     height: 500px;
     background-image: url('/images/ionia3.jpg'); /* URL de l'image de fond */
     background-size: cover; /* L'image couvre toute la box */
@@ -143,7 +143,7 @@ footer .copyright { /* Style de copyright */
 
 .image-box4 {
     position: relative;
-    width: 1240px;
+    width: 1260px;
     height: 500px;
     background-image: url('/images/shurima2.jpg'); /* URL de l'image de fond */
     background-size: cover; /* L'image couvre toute la box */
@@ -159,7 +159,7 @@ footer .copyright { /* Style de copyright */
 
 .image-box5 {
     position: relative;
-    width: 1240px;
+    width: 1260px;
     height: 500px;
     background-image: url('/images/targon2.jpg'); /* URL de l'image de fond */
     background-size: cover; /* L'image couvre toute la box */
