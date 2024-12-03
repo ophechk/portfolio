@@ -189,9 +189,14 @@ a.link{
 
 
 .image-box .content { /* Contenu à l'intérieur de la box */
-    position: relative; /* Pour être au-dessus de la superposition */
-    padding: 20px;
-    z-index: 1;
+    /* position: relative; Pour être au-dessus de la superposition */
+    /* padding: 20px;
+    z-index: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .image-box h2 {
