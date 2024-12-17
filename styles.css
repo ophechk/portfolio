@@ -19,27 +19,32 @@ header {
 }
 
 
-.header-left { /* Conteneur pour le titre et le logo */
+.header-left {
+    /* Conteneur pour le titre et le logo */
     display: flex;
     align-items: center;
-    gap: 10px; /* Espace entre le titre et le logo */
+    gap: 10px;
+    /* Espace entre le titre et le logo */
 }
 
 
-header h4 { /* Style du titre */
+header h4 {
+    /* Style du titre */
     font-size: 20px;
     margin: 0;
     color: #fff;
 }
 
 
-.navbar { /* Style de la barre de navigation */
+.navbar {
+    /* Style de la barre de navigation */
     display: flex;
     gap: 15px;
 }
 
 
-.navbar a { /* Style des liens de navigation */
+.navbar a {
+    /* Style des liens de navigation */
     color: #fff;
     text-decoration: none;
     padding: 8px 12px;
@@ -48,12 +53,14 @@ header h4 { /* Style du titre */
 }
 
 
-.navbar a:hover { /* Effet sur les liens au survol */
+.navbar a:hover {
+    /* Effet sur les liens au survol */
     background-color: #303f9f;
 }
 
 
-.navbar .active { /* Style du lien actif */
+.navbar .active {
+    /* Style du lien actif */
     background-color: #303f9f;
 }
 
@@ -79,20 +86,23 @@ h4 {
 
 /*footer*/
 footer {
-    background-color: black; /* Couleur de fond */
-    color: #fff; /* Couleur du texte */
+    background-color: black;
+    /* Couleur de fond */
+    color: #fff;
+    /* Couleur du texte */
     padding: 20px;
     text-align: center;
 }
 
 
-footer .copyright { /* Style de copyright */
+footer .copyright {
+    /* Style de copyright */
     margin-top: 15px;
     font-size: 0.9em;
     color: #ccc;
 }
 
-a.link{
+a.link {
     display: flex;
 }
 
@@ -101,8 +111,10 @@ a.link{
     position: relative;
     width: 1260px;
     height: 500px;
-    background-image: url('/images/arcane.jpg'); /* URL de l'image de fond */
-    background-size: cover; /* L'image couvre toute la box */
+    background-image: url('/images/arcane.jpg');
+    /* URL de l'image de fond */
+    background-size: cover;
+    /* L'image couvre toute la box */
     background-position: center;
     color: #fff;
     border-radius: 8px;
@@ -117,8 +129,10 @@ a.link{
     position: relative;
     width: 1260px;
     height: 500px;
-    background-image: url('/images/bilgewater.jpg'); /* URL de l'image de fond */
-    background-size: cover; /* L'image couvre toute la box */
+    background-image: url('/images/bilgewater.jpg');
+    /* URL de l'image de fond */
+    background-size: cover;
+    /* L'image couvre toute la box */
     background-position: center;
     color: #fff;
     border-radius: 8px;
@@ -133,8 +147,10 @@ a.link{
     position: relative;
     width: 1260px;
     height: 500px;
-    background-image: url('/images/ionia3.jpg'); /* URL de l'image de fond */
-    background-size: cover; /* L'image couvre toute la box */
+    background-image: url('/images/ionia3.jpg');
+    /* URL de l'image de fond */
+    background-size: cover;
+    /* L'image couvre toute la box */
     background-position: center;
     color: #fff;
     border-radius: 8px;
@@ -149,8 +165,10 @@ a.link{
     position: relative;
     width: 1260px;
     height: 500px;
-    background-image: url('/images/shurima2.jpg'); /* URL de l'image de fond */
-    background-size: cover; /* L'image couvre toute la box */
+    background-image: url('/images/shurima2.jpg');
+    /* URL de l'image de fond */
+    background-size: cover;
+    /* L'image couvre toute la box */
     background-position: center;
     color: #fff;
     border-radius: 8px;
@@ -165,8 +183,10 @@ a.link{
     position: relative;
     width: 1260px;
     height: 500px;
-    background-image: url('/images/targon2.jpg'); /* URL de l'image de fond */
-    background-size: cover; /* L'image couvre toute la box */
+    background-image: url('/images/targon2.jpg');
+    /* URL de l'image de fond */
+    background-size: cover;
+    /* L'image couvre toute la box */
     background-position: center;
     color: #fff;
     border-radius: 8px;
@@ -177,26 +197,29 @@ a.link{
     text-align: center;
 }
 
-.image-box::before { /* Superposition pour rendre le texte plus lisible */
+.image-box::before {
+    /* Superposition pour rendre le texte plus lisible */
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Couche sombre transparente */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Couche sombre transparente */
 }
 
 
-.image-box .content { /* Contenu à l'intérieur de la box */
+.image-box .content {
+    /* Contenu à l'intérieur de la box */
     /* position: relative; Pour être au-dessus de la superposition */
     /* padding: 20px;
     z-index: 1; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
 }
 
 .image-box h2 {
@@ -211,8 +234,10 @@ a.link{
 
 /*liens pdf*/
 
-.pdf-links { /* Style pour la section des liens PDF */
-    display: none; /* Masquer par défaut */
+.pdf-links {
+    /* Style pour la section des liens PDF */
+    display: none;
+    /* Masquer par défaut */
     margin: 20px auto;
     padding: 10px 20px;
     width: 60%;
@@ -241,7 +266,8 @@ a.link{
 }
 
 
-.toggle-btn { /* Style pour le bouton */
+.toggle-btn {
+    /* Style pour le bouton */
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -265,17 +291,21 @@ div.pdf {
 /*page d'accueil*/
 .box-container {
     display: flex;
-    gap: 180px; /* Espace entre les boîtes */
+    gap: 180px;
+    /* Espace entre les boîtes */
     padding: 20px;
 }
 
 
-.box1 { /* Style des boîtes carrées */
+.box1 {
+    /* Style des boîtes carrées */
     background-image: url(images/html.png);
     background-color: #e3f2fd;
     color: white;
-    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    width: 100px;
+    /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px;
+    /* Hauteur identique à la largeur pour un carré */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,12 +315,15 @@ div.pdf {
     transition: transform 0.2s;
 }
 
-.box2 { /* Style des boîtes carrées */
+.box2 {
+    /* Style des boîtes carrées */
     background-image: url(images/css.png);
     background-color: #e3f2fd;
     color: white;
-    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    width: 100px;
+    /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px;
+    /* Hauteur identique à la largeur pour un carré */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,12 +333,15 @@ div.pdf {
     transition: transform 0.2s;
 }
 
-.box3 { /* Style des boîtes carrées */
+.box3 {
+    /* Style des boîtes carrées */
     background-image: url(images/js.png);
     background-color: #e3f2fd;
     color: white;
-    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    width: 100px;
+    /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px;
+    /* Hauteur identique à la largeur pour un carré */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,12 +351,15 @@ div.pdf {
     transition: transform 0.2s;
 }
 
-.box4 { /* Style des boîtes carrées */
+.box4 {
+    /* Style des boîtes carrées */
     background-image: url(images/python.png);
     background-color: #e3f2fd;
     color: white;
-    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    width: 100px;
+    /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px;
+    /* Hauteur identique à la largeur pour un carré */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,12 +369,15 @@ div.pdf {
     transition: transform 0.2s;
 }
 
-.box5 { /* Style des boîtes carrées */
+.box5 {
+    /* Style des boîtes carrées */
     background-image: url(images/php.png);
     background-color: #e3f2fd;
     color: white;
-    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    width: 100px;
+    /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px;
+    /* Hauteur identique à la largeur pour un carré */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,39 +387,48 @@ div.pdf {
     transition: transform 0.2s;
 }
 
-.box1:hover { /* Effet au survol */
+.box1:hover {
+    /* Effet au survol */
     transform: scale(1.05);
 }
 
-.box2:hover { /* Effet au survol */
+.box2:hover {
+    /* Effet au survol */
     transform: scale(1.05);
 }
 
-.box3:hover { /* Effet au survol */
+.box3:hover {
+    /* Effet au survol */
     transform: scale(1.05);
 }
 
-.box4:hover { /* Effet au survol */
+.box4:hover {
+    /* Effet au survol */
     transform: scale(1.05);
 }
 
-.box5:hover { /* Effet au survol */
+.box5:hover {
+    /* Effet au survol */
     transform: scale(1.05);
 }
 
 .box-container2 {
     display: flex;
-    gap: 120px; /* Espace entre les boîtes */
+    gap: 120px;
+    /* Espace entre les boîtes */
     padding: 20px;
     margin-left: 330px;
 }
 
-.box6 { /* Style des boîtes carrées */
+.box6 {
+    /* Style des boîtes carrées */
     background-image: url(images/angular.png);
     background-color: #e3f2fd;
     color: white;
-    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    width: 100px;
+    /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px;
+    /* Hauteur identique à la largeur pour un carré */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,12 +438,15 @@ div.pdf {
     transition: transform 0.2s;
 }
 
-.box7 { /* Style des boîtes carrées */
+.box7 {
+    /* Style des boîtes carrées */
     background-image: url(images/typescript.png);
     background-color: #e3f2fd;
     color: white;
-    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    width: 100px;
+    /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px;
+    /* Hauteur identique à la largeur pour un carré */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,12 +456,15 @@ div.pdf {
     transition: transform 0.2s;
 }
 
-.box8 { /* Style des boîtes carrées */
+.box8 {
+    /* Style des boîtes carrées */
     background-image: url(images/mysql.png);
     background-color: #e3f2fd;
     color: white;
-    width: 100px; /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px; /* Hauteur identique à la largeur pour un carré */
+    width: 100px;
+    /* Largeur fixe pour rendre les boîtes carrées */
+    height: 100px;
+    /* Hauteur identique à la largeur pour un carré */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -419,22 +476,22 @@ div.pdf {
 
 /*CV*/
 
-h5{
+h5 {
     font-size: 18px;
     text-align: left;
 }
 
-h6{
+h6 {
     font-size: 15px;
     text-align: center;
 }
 
-p.center{
+p.center {
     text-align: center;
     text-decoration: underline;
 }
 
-p{
+p {
     text-align: justify;
 }
 
@@ -443,11 +500,15 @@ p{
 /*images*/
 
 .stage {
-    text-align: center; /* Centre l'image horizontalement */
-  }
-  
-  img {
-    max-width: 100%; 
+    text-align: center;
+    /* Centre l'image horizontalement */
+}
+
+img {
+    max-width: 100%;
     height: auto;
-  }
+}
+
+
+/*formulaire contact*/
 
