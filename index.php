@@ -137,7 +137,7 @@
         <div class="conteneur">
 
           <div class="contact-form-container">
-            <form class="contact-form" action="#" method="POST">
+            <form class="contact-form" action="" method="POST">
               <h2>Contactez-nous</h2>
 
               <label for="name">Nom</label>
