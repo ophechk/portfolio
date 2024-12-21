@@ -1,3 +1,37 @@
+<?php
+//connexion à la base de données
+  $serveur = "localhost";
+  $login = "root";
+  $mdp = "";
+  $bdname = "portfolio";
+
+  try {
+    $conn = new PDO("mysql:host=$serveur;bdname=$bdname", $login, $mdp);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "la connexion a bien été établie";
+  }
+  catch (PDOException $e) {
+    echo "la connexion a échoué:" . $e->setMessage();
+  }
+
+  if(isset($_POST['envoyer'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $sujet = $_POST['sujet'];
+    $message = $_POST['message'];
+
+    $sql = ("INSERT INTO `formulaire` (`name`, `email`, `sujet`, `message`) VALUES (':nom', ':email', ':sujet', ':message'");
+    $stmt = $conn->prepare($sql);
+
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':sujet', $sujet);
+    $stmt->bindParam(':message', $message);
+   
+  }
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -122,7 +156,7 @@
               <textarea id="message" name="message" rows="4" required
                 placeholder="Votre message"></textarea>
 
-              <button type="envoyer">Envoyer</button>
+              <button type="submit" value="envoyer" name="envoyer">Envoyer</button>
             </form>
           </div>
 
