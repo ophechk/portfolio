@@ -1,35 +1,3 @@
-<?php
-//connexion à la base de données
-  $serveur = "localhost";
-  $login = "root";
-  $mdp = "";
-  $bdname = "portfolio";
-
-  try {
-    $conn = new PDO("mysql:host=$serveur;bdname=$bdname", $login, $mdp);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  }
-  catch (PDOException $e) {
-  }
-
-  if(isset($_POST['envoyer'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $sujet = $_POST['sujet'];
-    $message = $_POST['message'];
-
-    $sql = ("INSERT INTO `formulaire` (`name`, `email`, `sujet`, `message`) VALUES (':nom', ':email', ':sujet', ':message'");
-    $stmt = $conn->prepare($sql);
-
-    $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':sujet', $sujet);
-    $stmt->bindParam(':message', $message);
-   
-  }
-
-?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -133,7 +101,7 @@
         <div class="conteneur">
 
           <div class="contact-form-container">
-            <form class="contact-form" action="" method="POST">
+            <form class="contact-form" action="traitement.php" method="POST">
               <h2>Contactez-nous</h2>
 
               <label for="name">Nom</label>
