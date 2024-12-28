@@ -119,7 +119,6 @@
 
     <br>
 
-    <img src="images/nature.jpg">
     <br>
 
     <main>
