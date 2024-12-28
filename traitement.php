@@ -30,7 +30,7 @@ if(isset($_POST['ok'])){
             "message" => $message
         )
     );
-    
+    echo "Message envoyé !";
 }
 
 ?>
