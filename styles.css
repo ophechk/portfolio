@@ -72,7 +72,6 @@ h2 {
 h4 {
     text-align: center;
     font-size: 2rem;
-
 }
 
 /*accueil*/
@@ -166,9 +165,9 @@ div.pdf {
 /*page d'accueil*/
 .box-container {
     display: flex;
-    gap: 180px;
+    gap: 80px;
     /* Espace entre les boîtes */
-    padding: 20px;
+    padding: 10px;
 }
 
 
