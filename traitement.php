@@ -24,10 +24,10 @@ if(isset($_POST['ok'])){
     $requete = $bdd->prepare("INSERT INTO formulaire VALUES (0, :name, :email, :sujet, :message)");
     $requete->execute(
         array(
-            "name" => $name;
-            "email" => $email;
-            "sujet" => $sujet;
-            "message" => $message;
+            "name" => $name,
+            "email" => $email,
+            "sujet" => $sujet,
+            "message" => $message
         )
     );
     
