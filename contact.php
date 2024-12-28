@@ -8,10 +8,8 @@
   try {
     $conn = new PDO("mysql:host=$serveur;bdname=$bdname", $login, $mdp);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "la connexion a bien été établie";
   }
   catch (PDOException $e) {
-    echo "la connexion a échoué:" . $e->setMessage();
   }
 
   if(isset($_POST['envoyer'])) {
@@ -113,7 +111,7 @@
         <a href="parcours.html">Parcours</a>
         <a href="projet.html">Projet</a>
         <a href="veille.html">Veille Technologique</a>
-        <a href="index.php" class="active">Contact</a>
+        <a href="contact.php" class="active">Contact</a>
       </div>
     </header>
 
