@@ -117,7 +117,7 @@
                 placeholder="Le sujet de votre message">
 
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" required
+              <textarea type="text" id="message" name="message" rows="4" required
                 placeholder="Votre message"></textarea>
 
               <button type="submit" value="envoyer" name="envoyer">Envoyer</button>

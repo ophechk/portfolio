@@ -1,21 +1,19 @@
 <?php
 
-$login = "root";
-$mdp = "";
-$bd = "portfolio";
-$serveur = "localhost";
+$servername = "localhost";
+$username = "root";
+$password = "";
 
 try {
-    $conn = new PDO("mysql:host=$serveur;dbname=$bd", $login, $mdp, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\'')); 
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    return $conn;
+    $bdd = new PDO("mysql:host=$serveurname;dbname=$portfolio", $username, $password); 
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //echo "Connexion réussie !"
 
 } catch (PDOException $e) {
     echo "Erreur : ".$e->getMessage();
 }
 
-if(isset($_POST['ok'])){
+if(isset($_POST['envoyer'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
     $sujet = $_POST['sujet'];
@@ -27,9 +25,10 @@ if(isset($_POST['ok'])){
             "name" => $name,
             "email" => $email,
             "sujet" => $sujet,
-            "message" => $message
+            "message" => $message,
         )
     );
+    
     echo "Message envoyé !";
 }
 
