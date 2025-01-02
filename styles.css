@@ -162,143 +162,54 @@ div.pdf {
     text-align: center;
 }
 
-/*page d'accueil*/
-.box-container {
+/* Style commun pour toutes les boîtes */
+.box {
+    background-color: #e3f2fd;
+    color: white;
+    width: 100px; /* Largeur fixe */
+    height: 100px; /* Hauteur identique à la largeur */
     display: flex;
-    gap: 80px;
-    /* Espace entre les boîtes */
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-size: cover; /* Ajuste l'image pour couvrir toute la boîte */
+    background-position: center; /* Centre l'image */
 }
 
-
-.box1 {
-    /* Style des boîtes carrées */
+/* Images spécifiques pour chaque boîte */
+.box.box1 {
     background-image: url(images/html.png);
-    background-color: #e3f2fd;
-    color: white;
-    width: 100px;
-    /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px;
-    /* Hauteur identique à la largeur pour un carré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
 }
 
-.box2 {
-    /* Style des boîtes carrées */
+.box.box2 {
     background-image: url(images/css.png);
-    background-color: #e3f2fd;
-    color: white;
-    width: 100px;
-    /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px;
-    /* Hauteur identique à la largeur pour un carré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
 }
 
-.box3 {
-    /* Style des boîtes carrées */
+.box.box3 {
     background-image: url(images/js.png);
-    background-color: #e3f2fd;
-    color: white;
-    width: 100px;
-    /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px;
-    /* Hauteur identique à la largeur pour un carré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
 }
 
-.box4 {
-    /* Style des boîtes carrées */
-    background-image: url(images/python.png);
-    background-color: #e3f2fd;
-    color: white;
-    width: 100px;
-    /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px;
-    /* Hauteur identique à la largeur pour un carré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+.box.box4 {
+    background-image: url(images/angular.png);
 }
 
-.box5 {
-    /* Style des boîtes carrées */
+.box.box5 {
+    background-image: url(images/mysql.png);
+}
+
+.box.box6 {
     background-image: url(images/php.png);
-    background-color: #e3f2fd;
-    color: white;
-    width: 100px;
-    /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px;
-    /* Hauteur identique à la largeur pour un carré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
 }
 
-.box1:hover {
-    /* Effet au survol */
-    transform: scale(1.05);
+.box.box7 {
+    background-image: url(images/python.png);
 }
 
-.box2:hover {
-    /* Effet au survol */
-    transform: scale(1.05);
-}
-
-.box3:hover {
-    /* Effet au survol */
-    transform: scale(1.05);
-}
-
-.box4:hover {
-    /* Effet au survol */
-    transform: scale(1.05);
-}
-
-.box5:hover {
-    /* Effet au survol */
-    transform: scale(1.05);
-}
-
-.box6:hover {
-    /* Effet au survol */
-    transform: scale(1.05);
-}
-
-.box7:hover {
-    /* Effet au survol */
-    transform: scale(1.05);
-}
-
-.box8:hover {
-    /* Effet au survol */
-    transform: scale(1.05);
+.box.box8 {
+    background-image: url(images/typescript.png);
 }
 
 .box-container2 {
@@ -307,60 +218,6 @@ div.pdf {
     /* Espace entre les boîtes */
     padding: 20px;
     margin-left: 330px;
-}
-
-.box6 {
-    /* Style des boîtes carrées */
-    background-image: url(images/angular.png);
-    background-color: #e3f2fd;
-    color: white;
-    width: 100px;
-    /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px;
-    /* Hauteur identique à la largeur pour un carré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.box7 {
-    /* Style des boîtes carrées */
-    background-image: url(images/typescript.png);
-    background-color: #e3f2fd;
-    color: white;
-    width: 100px;
-    /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px;
-    /* Hauteur identique à la largeur pour un carré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.box8 {
-    /* Style des boîtes carrées */
-    background-image: url(images/mysql.png);
-    background-color: #e3f2fd;
-    color: white;
-    width: 100px;
-    /* Largeur fixe pour rendre les boîtes carrées */
-    height: 100px;
-    /* Hauteur identique à la largeur pour un carré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
 }
 
 /*CV*/
