@@ -162,6 +162,11 @@ div.pdf {
     text-align: center;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Style commun pour toutes les boîtes */
 .box {
     background-color: #e3f2fd;

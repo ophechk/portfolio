@@ -70,7 +70,7 @@
     <header>
 
       <div class="header-left">
-        <h5>Portfolio CHHEAK Ophelia</h5>
+        <h5>Portfolio CHHEAK Ophélia</h5>
       </div>
 
       <div class="navbar">
