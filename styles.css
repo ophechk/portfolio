@@ -260,6 +260,46 @@ img {
     height: auto;
 }
 
+/*carrousel*/
 
-/*formulaire contact*/
+.carousel {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 0.5s;
+}
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 

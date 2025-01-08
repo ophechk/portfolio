@@ -1,198 +1,142 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Import Google Icon Font-->
-        <link rel="stylesheet" href="styles.css">
-        <!--Let browser know website is optimized for mobile-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
 
-        <style>
-    
-            .container2 {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-                padding: 20px;
-                max-width: 1200px;
-            }
-    
-            .project-box {
-                background-color: #fff;
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                width: 300px;
-                padding: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: center;
-                transition: transform 0.2s;
-            }
-    
-            .project-box:hover {
-                transform: translateY(-5px);
-            }
-    
-            .project-title {
-                font-size: 1.7em;
-                margin-bottom: 10px;
-                color: #f5ac04;
-            }
-    
-            .project-description {
-                font-size: 1em;
-                margin-bottom: 15px;
-                color: #555;
-            }
-    
-            .project-button {
-                background-color: #eac04d;
-                color: white;
-                border: none;
-                padding: 10px 15px;
-                border-radius: 5px;
-                text-decoration: none;
-                font-size: 1em;
-                cursor: pointer;
-            }
-    
-            .project-button:hover {
-                background-color: #eccb90;
-            }
-        </style>
+<head>
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-    </head>
+    <style>
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+        }
 
-    <body>
+        .project-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
 
-        <header>
+        .project-box:hover {
+            transform: translateY(-5px);
+        }
 
-            <div class="header-left">
-                <h5>Portfolio CHHEAK Ophélia</h5>
+        .project-title {
+            font-size: 1.7em;
+            margin-bottom: 10px;
+            color: #f5ac04;
+        }
+
+        .project-description {
+            font-size: 1em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .project-button {
+            background-color: #eac04d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .project-button:hover {
+            background-color: #eccb90;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-left">
+            <h5>Portfolio CHHEAK Ophélia</h5>
+        </div>
+
+        <div class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="projet.html" class="active">Projets</a>
+            <a href="veille.html">Veille Technologique</a>
+            <a href="contact.php">Contact</a>
+        </div>
+    </header>
+
+    <br>
+
+    <main>
+
+        <h4>Mes Projets</h4>
+
+        <section>
+
+            <div class="conteneur">
+                <p>Retrouvez ci-dessous tous les projets que j'ai réalisé
+                    pendant ces deux années de BTS que ce soit en cours ou
+                    en stage.</p>
             </div>
 
-            <div class="navbar">
-                <a href="index.html">Accueil</a>
-                <a href="apropos.html">À propos</a>
-                <a href="parcours.html">Parcours</a>
-                <a href="projet.html" class="active">Projets</a>
-                <a href="veille.html">Veille Technologique</a>
-                <a href="contact.php">Contact</a>
+            <br>
+            <br>
+
+            <div class="conteneur">
+                <h5>Projet : Les Paniers Gourmands</h5>
+
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="images/LPG1.png">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="">
+                        </div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="carousel-button prev">&#10094;</button>
+                        <button class="carousel-button next">&#10095;</button>
+                    </div>
+                </div>
             </div>
-        </header>
+
+        </section>
 
         <br>
+        <br>
 
-        <main>
+        <script src="script.js"></script>
 
-            <h4>Mes Projets</h4>
+    </main>
 
-            <section>
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2024 - Mon Portfolio. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+</body>
 
-                <div class="conteneur">
-                    <p>Retrouvez ci-dessous tous les projets que j'ai réalisé
-                        pendant ces deux années de BTS que ce soit en cours ou
-                        en stage.</p>
-                </div>
-
-                <br>
-                <br>
-
-                <div class="conteneur">
-
-                    <div class="container2">
-                        <!-- Exemple de projet -->
-                        <div class="project-box">
-                            <div class="project-title">Projet 1</div>
-                            <img src width>
-                            <div class="project-description">Une brève
-                                description
-                                du
-                                projet 1.</div>
-                            <a href="projet1.html" class="project-button">Voir
-                                le
-                                projet</a>
-                        </div>
-
-                        <div class="project-box">
-                            <div class="project-title">Projet 2</div>
-                            <img src width>
-                            <div class="project-description">Une brève
-                                description
-                                du
-                                projet 2.</div>
-                            <a href="projet2.html" class="project-button">Voir
-                                le
-                                projet</a>
-                        </div>
-
-                        <div class="project-box">
-                            <div class="project-title">Projet 3</div>
-                            <img src width>
-                            <div class="project-description">Une brève
-                                description
-                                du
-                                projet 3.</div>
-                            <a href="projet3.html" class="project-button">Voir
-                                le
-                                projet</a>
-                        </div>
-
-                        <div class="project-box">
-                            <div class="project-title">Projet 1</div>
-                            <img src width>
-                            <div class="project-description">Une brève
-                                description
-                                du
-                                projet 1.</div>
-                            <a href="projet1.html" class="project-button">Voir
-                                le
-                                projet</a>
-                        </div>
-
-                        <div class="project-box">
-                            <div class="project-title">Projet 2</div>
-                            <img src width>
-                            <div class="project-description">Une brève
-                                description
-                                du
-                                projet 2.</div>
-                            <a href="projet2.html" class="project-button">Voir
-                                le
-                                projet</a>
-                        </div>
-
-                        <div class="project-box">
-                            <div class="project-title">Projet 3</div>
-                            <img src width>
-                            <div class="project-description">Une brève
-                                description
-                                du
-                                projet 3.</div>
-                            <a href="projet3.html" class="project-button">Voir
-                                le
-                                projet</a>
-                        </div>
-
-                        <!-- Ajoutez d'autres projets ici -->
-                    </div>
-
-                </section>
-
-                <br>
-                <br>
-
-                <script src="script.js"></script>
-
-            </main>
-
-            <footer>
-                <div class="footer-content">
-                    <div class="copyright">
-                        &copy; 2024 - Mon Portfolio. Tous droits réservés.
-                    </div>
-                </div>
-            </footer>
-        </body>
-    </html>
+</html>
