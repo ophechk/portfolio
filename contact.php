@@ -78,6 +78,7 @@
         <a href="apropos.html">À propos</a>
         <a href="parcours.html">Parcours</a>
         <a href="projet.html">Projet</a>
+        <a href="E4.html">E4</a>
         <a href="E5.html">E5</a>
         <a href="veille.html">Veille Technologique</a>
         <a href="contact.php" class="active">Contact</a>
